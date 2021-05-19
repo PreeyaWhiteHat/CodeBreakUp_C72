@@ -1,0 +1,48 @@
+Step 1
+
+import { Text,
+   View,
+   TouchableOpacity,
+   TextInput,
+   Image,
+   StyleSheet,
+  KeyboardAvoidingView ,
+ToastAndroid,Alert} from 'react-native';
+
+after  else if (buttonState === "normal"){
+        return(
+
+ <KeyboardAvoidingView  style={styles.container} behavior="padding" enabled>
+  </KeyboardAvoidingView>
+
+-------------------------------------------------------------------
+Step 2
+
+  onChangeText={text =>this.setState({scannedBookId:text})}
+
+onChangeText ={text => this.setState({scannedStudentId:text})}
+-------------------------------------------------------------
+Step 3
+
+in handleTransaction ()........ in if and else
+
+Alert.alert(transactionMessage)
+------------------------------------
+Step 4
+
+import ToastAndroid
+
+replace Alert.alert(transactionMessage) by
+
+ ToastAndroid.show(transactionMessage, ToastAndroid.SHORT);
+--------------------------------------
+step 5
+
+in Submite button
+
+this.setState(
+                  {scannedBookId:'',
+                   scannedStudentId:''})
+              }}
+
+----------------------------------------
